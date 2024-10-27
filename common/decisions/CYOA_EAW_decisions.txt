@@ -1,0 +1,31 @@
+CYOA_punch_erion_decisions = {
+
+	CYOA_punch_erion_decision = {
+		icon = GFX_decision_generic_civil_support
+			
+		#available = {
+		#	always = yes
+		#}
+		
+		allowed = {
+			always = yes
+		}
+		
+		visible = {
+			always = yes
+		}
+		
+		fire_only_once = no
+		
+		days_remove = 30
+		
+		cost = 15
+		
+		complete_effect = {
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.05 
+			}	
+		}
+	}		
+}
