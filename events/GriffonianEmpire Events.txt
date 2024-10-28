@@ -2154,6 +2154,21 @@ country_event = { #Shooting the Emperor
 			news_event = { id = imperial_news.6 days = 4 }
 		}
 	}
+	###MOD_ADD1###
+	option = {
+		name = imperial.75.cyoa
+		add_political_power = 50
+		add_stability = 0.1
+		GRI_benito = {
+			retire = yes
+		}
+		hidden_effect = {
+			set_global_flag = GRI_grover_vi_dead
+			country_event = { id = imperial.76 days = 3 }
+			news_event = { id = imperial_news.6 days = 4 }
+		}
+	}
+	###MOD_ADD2###
 }
 
 country_event = { #The Anarchy
