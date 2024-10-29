@@ -1,0 +1,243 @@
+﻿add_namespace = imperial_cyoa
+add_namespace = imperial_cyoa_news
+add_namespace = grover_cyoa
+
+country_event = { #Some Anarchy
+	id = imperial_cyoa.76
+	immediate = {log = "[GetDateText]: [Root.GetName]: event imperial_cyoa.76"}
+	title = imperial_cyoa.76.t
+	desc = imperial_cyoa.76.d
+
+	picture = GFX_event_medieval_city
+	is_triggered_only = yes
+
+	option = {
+		name = imperial_cyoa.76.a
+		end_puppet = STW
+		if = {
+			limit = {
+				STW = {
+					is_in_faction_with = GRI
+				}
+			}
+			STW = {
+				leave_faction = yes
+				add_opinion_modifier = {
+				target = GRI modifier = sworn_enemies
+		        }
+			}
+		}
+		end_puppet = FEA
+		if = {
+			limit = {
+				FEA = {
+					is_in_faction_with = GRI
+				}
+			}
+			FEA = {
+				leave_faction = yes
+				add_opinion_modifier = {
+				target = GRI modifier = sworn_enemies
+		        }
+			}
+		}
+		end_puppet = PYT
+		if = {
+			limit = {
+				PYT = {
+					is_in_faction_with = GRI
+				}
+			}
+			PYT = {
+				leave_faction = yes
+			}
+		}
+		end_puppet = ANG
+		if = {
+			limit = {
+				ANG = {
+					is_in_faction_with = GRI
+				}
+			}
+			ANG = {
+				leave_faction = yes
+			}
+		}
+		end_puppet = ROU
+		if = {
+			limit = {
+				ROU = {
+					is_in_faction_with = GRI
+				}
+			}
+			ROU = {
+				leave_faction = yes
+			}
+		}
+		end_puppet = YAL
+		if = {
+			limit = {
+				YAL = {
+					is_in_faction_with = GRI
+				}
+			}
+			YAL = {
+				leave_faction = yes
+			}
+		}
+		end_puppet = KAT
+		if = {
+			limit = {
+				KAT = {
+					is_in_faction_with = GRI
+				}
+			}
+			KAT = {
+				leave_faction = yes
+			}
+		}
+		end_puppet = BRZ
+		if = {
+			limit = {
+				BRZ = {
+					is_in_faction_with = GRI
+				}
+			}
+			BRZ = {
+				leave_faction = yes
+				add_opinion_modifier = {
+				target = GRI modifier = sworn_enemies
+		        }
+			}
+		}
+		add_political_power = -75
+		add_stability = -0.10
+		add_war_support = -0.10
+		add_ideas = GRI_the_anarchy_idea
+		custom_effect_tooltip = ANG_political_tree_tp
+		hidden_effect = {
+			STW = { country_event = { id = strawberry.21 days = 1 } fire_GRD_cosmetic_handling = yes}
+			BRZ = { country_event = { id = bronzehill_revenge.1 days = 1 } fire_GRD_cosmetic_handling = yes }
+			FEA = { country_event = { id = feat.78 days = 1 } fire_GRD_cosmetic_handling = yes }
+			PYT = { country_event = { id = marschen.40 days = 1 } fire_GRD_cosmetic_handling = yes }
+			ROU = { country_event = { id = romau.1 days = 1 } fire_GRD_cosmetic_handling = yes }
+			YAL = { country_event = { id = yale.63 days = 1 } fire_GRD_cosmetic_handling = yes }
+			ANG = { country_event = { id = angriver.21 days = 1 } fire_GRD_cosmetic_handling = yes }
+			KAT = { country_event = { id = katerin_new.26 days = 1} fire_GRD_cosmetic_handling = yes }
+			load_focus_tree = { 
+				tree = imperial_cyoa_army_focus
+				keep_completed = yes
+			}
+			set_country_flag = have_regular_puppets
+			set_country_flag = GRI_junta_established
+			set_global_flag = GRI_junta_flag
+		}
+	}
+}
+
+news_event = {
+	id = imperial_cyoa_news.6 #Holy shit the absolute madgriffs didn't actually kill a child!
+	immediate = {log = "[GetDateText]: [Root.GetName]: event imperial_cyoa_news.6"}
+	title = imperial_cyoa_news.6.t
+	desc = imperial_cyoa_news.6.d
+	picture = GFX_news_griffenheim_night
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = imperial_cyoa_news.6.a
+		trigger = { tag = GRI }
+	}
+	option = {
+		name = imperial_cyoa_news.6.b
+		trigger = { tag = FAT }
+	}
+	option = {
+		name = imperial_cyoa_news.6.c
+		trigger = { tag = JER }
+	}
+	option = {
+		name = imperial_cyoa_news.6.e
+		trigger = { tag = WNG }
+	}
+	option = {
+		name = imperial_cyoa_news.6.f
+		trigger = {
+			is_griffon_continent_griffon_country = yes
+			NOT = { tag = GRI }
+			NOT = { tag = FAT }
+			NOT = { tag = WNG }
+			NOT = { tag = JER }
+			NOT = { tag = DED }
+			has_opinion = { target = GRI value > 0 }
+		}
+	}
+	option = {
+		name = imperial_cyoa_news.6.not_f
+		trigger = {
+			is_griffon_continent_griffon_country = yes
+			NOT = { tag = GRI }
+			NOT = { tag = FAT }
+			NOT = { tag = WNG }
+			NOT = { tag = JER }
+			NOT = { tag = DED }
+			NOT = { has_opinion = { target = GRI value > 0 } }
+		}
+	}
+	option = {
+		name = imperial_cyoa_news.6.equestria_f
+		trigger = {
+			NOT = {
+				original_tag = GRF
+				original_tag = GFF
+				tag = DED
+			}
+			is_griffon_continent_griffon_country = no
+			has_opinion = { target = GRI value > 0 }
+		}
+	}
+	option = {
+		name = imperial_cyoa_news.6.equestria_no_f
+		trigger = {
+			NOT = {
+				original_tag = GRF
+				original_tag = GFF
+				tag = DED
+			}
+			is_griffon_continent_griffon_country = no
+			NOT = {
+				has_government = democratic
+			}
+			has_opinion = { target = GRI value < 0 }
+		}
+	}
+	option = {
+		name = imperial_cyoa_news.6.equestria_no_f_dem
+		trigger = {
+			NOT = {
+				original_tag = GRF
+				original_tag = GFF
+				tag = DED
+			}
+			is_griffon_continent_griffon_country = no
+			has_government = democratic
+			NOT = { has_opinion = { target = GRI value > 0 } }
+		}
+	}
+	option = {
+		name = imperial_cyoa_news.6.equestria_grf
+		trigger = {
+			OR = {
+				original_tag = GRF
+				original_tag = GFF
+			}
+		}
+	}
+	option = {
+		name = imperial_cyoa_news.6.ded
+		trigger = { tag = DED }
+	}
+}
+

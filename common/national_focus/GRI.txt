@@ -61,6 +61,28 @@ focus_tree = {
 	shared_focus = GRI_new_navy
 }
 
+###MOD_ADD1###
+focus_tree = {
+	id = imperial_cyoa_army_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = GRI
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -19 y = 2400 }
+
+	shared_focus = GRI_industry_technology
+	shared_focus = GRI_CYOA_the_grand_coup
+	shared_focus = GRI_army
+	shared_focus = GRI_airforce
+	shared_focus = GRI_new_navy
+}
+###MOD_ADD2###
 
 ### The Empire ###
 
@@ -10237,3 +10259,2992 @@ shared_focus = {
 		}
 	}
 }
+
+###MOD_ADD1###
+### Monarchy-Army Focus Tree
+shared_focus = {
+	id = GRI_CYOA_the_grand_coup
+	icon = GFX_goal_national_populism
+	x = 16
+	y = 0
+	cost = 1.00
+	available = {
+		always = no
+	}
+	bypass = {
+		has_country_flag = GRI_junta_established
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_grand_coup"
+		custom_effect_tooltip = GRI_junta_tp
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_oh_god
+	icon = GFX_goal_military_academy
+	x = 14
+	y = 1
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_the_grand_coup }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_oh_god"
+		country_event = { id = imperial.77 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_everything_is_on_fire
+	icon = GFX_goal_revolution
+	x = 18
+	y = 1
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_the_grand_coup }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_everything_is_on_fire"
+		country_event = { id = imperial.78 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_calm_the_fuck_down
+	icon = GFX_goal_authority
+	x = 16
+	y = 2
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_everything_is_on_fire }
+	prerequisite = { focus = GRI_CYOA_oh_god }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_calm_the_fuck_down"
+		country_event = { id = imperial.79 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_secure_the_streets
+	icon = GFX_focus_generic_license_production
+	x = 14
+	y = 3
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_calm_the_fuck_down }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_secure_the_streets"
+		country_event = { id = imperial.80 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_hang_them_high
+	icon = GFX_goal_purge_opposition
+	x = 13
+	y = 4
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_secure_the_streets }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_CYOA_hang_them_high"
+		country_event = { id = imperial.81 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_a_bullet_for_the_priests
+	icon = GFX_goal_secret_agents
+	x = 16
+	y = 3
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_calm_the_fuck_down }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_a_bullet_for_the_priests"
+		country_event = { id = imperial.82 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_a_message
+	icon = GFX_goal_step_on_skull
+	x = 16
+	y = 4
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_a_bullet_for_the_priests }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_a_message"
+		country_event = { id = imperial.83 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_traitors_within
+	icon = GFX_goal_skull_treaty
+	x = 18
+	y = 3
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_calm_the_fuck_down }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_traitors_within"
+		country_event = { id = imperial.84 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_what_they_deserve
+	icon = GFX_goal_split_helmet
+	x = 19
+	y = 4
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_traitors_within }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_what_they_deserve"
+		country_event = { id = imperial.85 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_shoot_the_nobles
+	icon = GFX_goal_crush_monarchy
+	x = 14
+	y = 5
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_hang_them_high }
+	prerequisite = { focus = GRI_CYOA_a_message }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_shoot_the_nobles"
+		country_event = { id = imperial.86 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_kill_eros
+	icon = GFX_HOL_crackdown_natpop
+	x = 18
+	y = 5
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_a_message }
+	prerequisite = { focus = GRI_CYOA_what_they_deserve }
+	bypass = {
+	    TRD = { has_government = fascism }
+	}
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_kill_eros"
+		country_event = { id = imperial.87 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_the_anarchy_ends
+	icon = GFX_goal_Duskclaw_Icon
+	x = 16
+	y = 6
+	cost = 2.90
+	prerequisite = { focus = GRI_CYOA_shoot_the_nobles }
+	prerequisite = { focus = GRI_CYOA_kill_eros }
+
+	ai_will_do = {
+		factor = 20
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_anarchy_ends"
+		country_event = { id = imperial.88 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_propaganda_and_or_education
+	icon = GFX_goal_generic_media_controls
+	x = 14
+	y = 7
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_anarchy_ends }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_propaganda_and_or_education"
+		custom_effect_tooltip = GRI_education_tooltip
+		hidden_effect = {
+			country_event = { id = imperial.89 days = 75 random = 290 }#days to hours applied
+		}
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_a_portrait_in_every_home
+	icon = GFX_goal_generic_propaganda
+	x = 12
+	y = 9
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_ministry_of_propaganda }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_a_portrait_in_every_home"
+		add_political_power = 50
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_ministry_of_propaganda
+	icon = GFX_goal_generic_secret_documents
+	x = 13
+	y = 8
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_propaganda_and_or_education }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_ministry_of_propaganda"
+		add_political_power = 50
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = GRI_gobbels
+		hidden_effect = {
+			add_ideas = GRI_gobbels
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_kulturekampf
+	icon = GFX_goal_generic_archonism
+	x = 14
+	y = 9
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_ministry_of_propaganda }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_kulturekampf"
+		add_ideas = GRI_new_culture
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = GRI_CYOA_the_war_economy
+	icon = GFX_r56_goal_FRA_alliance_with_industrialists
+	x = 16
+	y = 7
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_anarchy_ends }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_war_economy"
+		custom_effect_tooltip = GRI_war_economy_tp
+		add_ideas = war_economy
+		set_country_flag = war_economy_only_flag
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_convert_the_factories
+	icon = GFX_goal_generic_takeover_industries
+	x = 15
+	y = 8
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_war_economy }
+	available = {
+		382 = {
+			is_controlled_by = ROOT
+			industrial_complex > 2
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_convert_the_factories"
+		382 = {
+			remove_building = {
+				type = industrial_complex
+				level = 3
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_military_industrial_council
+	icon = GFX_goal_artillery_factories
+	x = 17
+	y = 8
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_war_economy }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_military_industrial_council"
+		add_ideas = GRI_military_industrial_council_idea
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = comus
+		hidden_effect = {
+			add_ideas = comus
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_we_need_more
+	icon = GFX_goal_Focus_Military_Mobilisation
+	x = 16
+	y = 9
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_convert_the_factories }
+	prerequisite = { focus = GRI_CYOA_military_industrial_council }
+	available = {
+		any_owned_state = {
+			is_controlled_by = ROOT
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_we_need_more"
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_reform_the_army
+	icon = GFX_goal_GRI_army_expansion
+	x = 18
+	y = 7
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_anarchy_ends }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_reform_the_army"
+		set_country_flag = GRI_army_and_air_unlocked
+		add_manpower = 7500
+		army_experience = 25
+		add_war_support = 0.05
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = GRI_CYOA_new_officers
+	icon = GFX_goal_MAF_African_Pilots
+	x = 19
+	y = 8
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_reform_the_army }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_new_officers"
+		add_corps_commander_role = {
+			character = GRI_atlas_hengsbach
+			traits = { fortress_buster organizer griffon_race_trait }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		custom_effect_tooltip = GRI_atlas_stats_tp
+		add_corps_commander_role = {
+			character = GRI_kronos_neubert
+			traits = { skilled_staffer adaptable griffon_race_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		custom_effect_tooltip = GRI_kronos_stats_tp
+		add_corps_commander_role = {
+			character = GRI_aras_seeliger
+			traits = { trait_engineer griffon_race_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		custom_effect_tooltip = GRI_aras_stats_tp
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_no_more_police
+	icon = GFX_goal_HOL_amend_wapenwet
+	x = 20
+	y = 9
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_new_officers }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_no_more_police"
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			add_ideas = GRI_military_police_idea_lar
+		}
+		else = {
+			add_ideas = GRI_military_police_idea
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_RESISTANCE FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_citizenship_for_service
+	icon = GFX_goal_MAF_Graveyard
+	x = 18
+	y = 9
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_new_officers }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_citizenship_for_service"
+		add_ideas = GRI_citizenship_for_service_idea
+		if = {
+			limit = { 
+			    has_idea = disarmed_nation 
+			}
+			add_ideas = volunteer_only
+		}
+		else_if = {
+			limit = { 
+			    has_idea = volunteer_only 
+			}
+			add_ideas = limited_conscription
+		}
+		else_if = {
+			limit = { 
+			    has_idea = limited_conscription 
+			}
+			add_ideas = extensive_conscription
+		}
+		else_if = {
+			limit = { 
+			    has_idea = extensive_conscription 
+			}
+			add_ideas = service_by_requirement
+		}
+		else_if = {
+			limit = { 
+			    has_idea = service_by_requirement 
+			}
+			add_ideas = all_adults_serve
+		}
+		else = {
+			add_ideas = scraping_the_barrel
+		}
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_into_the_south
+	icon = GFX_goal_authority
+	x = 16
+	y = 10
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_citizenship_for_service }
+	prerequisite = { focus = GRI_CYOA_we_need_more }
+	prerequisite = { focus = GRI_CYOA_kulturekampf }
+	prerequisite = { focus = GRI_CYOA_a_portrait_in_every_home }
+	prerequisite = { focus = GRI_CYOA_no_more_police }
+
+	ai_will_do = {
+		factor = 11
+	}
+	bypass = {
+		ROU = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		YAL = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		ANG = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		KAT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		FEA = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		BRZ = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		PYT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		STW = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+	}
+	will_lead_to_war_with = ROU
+	will_lead_to_war_with = YAL
+	will_lead_to_war_with = ANG
+	will_lead_to_war_with = KAT
+	will_lead_to_war_with = FEA
+	will_lead_to_war_with = BRZ
+	will_lead_to_war_with = PYT
+	will_lead_to_war_with = STW
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_into_the_south"
+		if = {
+			limit = { ROU = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = ROU 
+				}
+			}
+			declare_war_on = { type = annex_everything target = ROU }
+		}
+		if = {
+			limit = { YAL = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = YAL 
+				}
+			}
+			declare_war_on = { type = annex_everything target = YAL }
+		}
+		if = {
+			limit = { ANG = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = ANG 
+				}
+			}
+			declare_war_on = { type = annex_everything target = ANG }
+		}
+		if = {
+			limit = { KAT = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = KAT 
+				}
+			}
+			declare_war_on = { type = annex_everything target = KAT }
+		}
+		if = {
+			limit = { FEA = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = FEA 
+				}
+			}
+			declare_war_on = { type = annex_everything target = FEA }
+		}
+		if = {
+			limit = { BRZ = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = BRZ 
+				}
+			}
+			declare_war_on = { type = annex_everything target = BRZ }
+		}
+		if = {
+			limit = { PYT = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = PYT 
+				}
+			}
+			declare_war_on = { type = annex_everything target = PYT }
+		}
+		if = {
+			limit = { STW = { exists = yes } }
+			hidden_effect = {
+				create_wargoal = { 
+					type = annex_everything 
+					target = STW 
+				}
+			}
+			declare_war_on = { type = annex_everything target = STW }
+		}
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = ROU
+						tag = YAL
+						tag = ANG
+						tag = KAT
+						tag = FEA
+						tag = BRZ
+						tag = PYT
+						tag = STW
+					}
+					any_owned_state = {
+						OR = {
+							is_core_of = ROU
+							is_core_of = YAL
+							is_core_of = ANG
+							is_core_of = KAT
+							is_core_of = FEA
+							is_core_of = PYT
+							is_core_of = BRZ
+							is_core_of = STW
+						}
+					}
+				}
+				ROOT = {
+					create_wargoal = { 
+						type = annex_everything 
+						target = PREV 
+					}
+				}
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_core_the_universities
+	icon = GFX_goal_offensive_army
+	x = 12
+	y = 11
+	cost = 5
+	prerequisite = { focus = GRI_CYOA_into_the_south }
+
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_the_universities"
+		ROU = { add_to_ROOT_potential_cores = yes }
+		YAL = { add_to_ROOT_potential_cores = yes }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_core_the_shit_forest
+	icon = GFX_goal_MAF_Napalm
+	x = 14
+	y = 11
+	cost = 5
+	prerequisite = { focus = GRI_CYOA_into_the_south }
+
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_the_shit_forest"
+		KAT = { add_to_ROOT_potential_cores = yes }
+		ANG = { add_to_ROOT_potential_cores = yes }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_greenback_aluminum
+	icon = GFX_goal_forced_res
+	x = 13
+	y = 12
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_core_the_universities }
+	prerequisite = { focus = GRI_CYOA_core_the_shit_forest }
+	available = {
+		398 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_greenback_aluminum"
+		add_resource = {
+			type = steel
+			amount = 16
+			state = 398
+		}
+		add_resource = {
+			type = aluminium
+			amount = 20
+			state = 398
+		}
+		save_current_manpower = yes
+		398 = {
+			add_extra_state_shared_building_slots = 1
+			add_manpower = -2500
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		restore_previous_manpower = yes
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_angriver_factories
+	icon = GFX_goal_fire
+	x = 14
+	y = 13
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_greenback_aluminum }
+	available = {
+	    411 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+		423 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_angriver_factories"
+		save_current_manpower = yes
+		411 = {
+			add_extra_state_shared_building_slots = 2
+			add_manpower = -2500
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		423 = {
+			add_extra_state_shared_building_slots = 2
+			add_manpower = -2500
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		restore_previous_manpower = yes
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_reuse_a_uni
+	icon = GFX_goal_government_icon
+	x = 16
+	y = 11
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_into_the_south }
+	available = {
+	    OR = {
+	        674 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    } 
+		    520 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    } 
+	    }
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_reuse_a_uni"
+		add_research_slot = 1
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = GRI_CYOA_military_school
+	icon = GFX_goal_technological_supremacy
+	x = 15
+	y = 12
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_reuse_a_uni }
+	mutually_exclusive = { focus = GRI_CYOA_use_it_for_propaganda }
+	available = {
+	    520 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_military_school"
+		add_ideas = GRI_PYT_university
+	}
+	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = GRI_CYOA_use_it_for_propaganda
+	icon = GFX_goal_supremacy_of_will
+	x = 17
+	y = 12
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_reuse_a_uni }
+	mutually_exclusive = { focus = GRI_CYOA_military_school }
+	available = {
+	    674 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_use_it_for_propaganda"
+		add_ideas = GRI_university
+	}
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = GRI_CYOA_secret_projects
+	icon = GFX_focus_wonderweapons
+	x = 16
+	y = 13
+	cost = 7.20
+	prerequisite = { 
+		focus = GRI_CYOA_military_school 
+		focus = GRI_CYOA_use_it_for_propaganda
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_secret_projects"
+		add_tech_bonus = {
+			name = RCT_nuclear_bonus
+			bonus = 1.0
+			uses = 1
+			category = nuclear
+		}
+	}
+	search_filters = { FOCUS_FILTER_RESEARCH }
+}
+
+shared_focus = {
+	id = GRI_CYOA_core_feathisia
+	icon = GFX_goal_DEI_focus_disband_volksraad
+	x = 18
+	y = 11
+	cost = 5
+	prerequisite = { focus = GRI_CYOA_into_the_south }
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_feathisia"
+		FEA = { add_to_ROOT_potential_cores = yes }
+		PYT = { add_to_ROOT_potential_cores = yes }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_core_the_dogs
+	icon = GFX_Goal_YUN_The_Mountain_Economy
+	x = 20
+	y = 11
+	cost = 5
+	prerequisite = { focus = GRI_CYOA_into_the_south }
+
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_core_the_dogs"
+		BRZ = { add_to_ROOT_potential_cores = yes }
+		STW = { add_to_ROOT_potential_cores = yes }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_ban_the_feathisian_language
+	icon = GFX_goal_further_oil
+	x = 19
+	y = 12
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_core_feathisia }
+	prerequisite = { focus = GRI_CYOA_core_the_dogs }
+	available = {
+		497 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+		434 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_ban_the_feathisian_language"
+		add_political_power = -50
+		add_stability = -0.05
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 497
+		}
+		add_resource = {
+			type = oil
+			amount = 16
+			state = 434
+		}
+		save_current_manpower = yes
+		497 = {
+			add_extra_state_shared_building_slots = 1
+			add_manpower = -2500
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+		434 = {
+			add_extra_state_shared_building_slots = 1
+			add_manpower = -2500
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+		restore_previous_manpower = yes
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_expell_the_dogs
+	icon = GFX_goal_purge_opposition
+	x = 18
+	y = 13
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_ban_the_feathisian_language }
+	available = {
+		568 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+		539 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+		492 = {
+			owner = {
+				OR = { 
+				    tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					} 
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_expell_the_dogs"
+		add_political_power = -50
+		add_stability = -0.05
+		add_resource = {
+			type = tungsten
+			amount = 14
+			state = 568
+		}
+		add_resource = {
+			type = chromium
+			amount = 19
+			state = 539
+		}
+		add_resource = {
+			type = steel
+			amount = 12
+			state = 492
+		}
+		save_current_manpower = yes
+		539 = {
+			add_manpower = -50000
+		}
+		568 = {
+			add_manpower = -50000
+		}
+		492 = {
+			add_manpower = -100000
+		}
+		restore_previous_manpower = yes
+		hidden_effect = {
+			if = {
+				limit = { DMT = { has_government = fascism } }
+				DMT = { country_event = { id = imperial.93 days = 30 } }
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_the_reich_rises
+	icon = GFX_focus_ger_reichskommisariats
+	x = 16
+	y = 14
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_angriver_factories }
+	prerequisite = { focus = GRI_CYOA_expell_the_dogs }
+	prerequisite = { focus = GRI_CYOA_secret_projects }
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_reich_rises"
+		add_ideas = GRI_rising_empire
+		hidden_effect = { news_event = { id = imperial_news.7 hours = 6 } set_global_flag = GRI_empire_rising_flag }
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = GRI_CYOA_push_into_the_north
+	icon = GFX_focus_generic_strike_at_democracy2
+	x = 12
+	y = 15
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_reich_rises }
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 11
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_FAT_SRS_MNC_VED_HAU_tp
+		    FAT = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FAW = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			SRS = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			MNC = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			VED = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			HAU = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+	}
+	will_lead_to_war_with = FAT
+	will_lead_to_war_with = FAW
+	will_lead_to_war_with = SRS
+	will_lead_to_war_with = MNC
+	will_lead_to_war_with = VED
+	will_lead_to_war_with = HAU
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_push_into_the_north"
+		effect_tooltip = { create_wargoal = { type = annex_everything target = FAT } }
+		hidden_effect = {
+			every_country_with_original_tag = {
+				original_tag_to_check = FAT
+				ROOT = { create_wargoal = { type = annex_everything target = PREV } }
+			}
+		}
+		if = {
+			limit = { country_exists = FAW }
+			create_wargoal = { type = annex_everything target = FAW }
+		}
+		create_wargoal = { type = annex_everything target = SRS }
+		hidden_effect = {
+			every_country_with_original_tag = {
+				original_tag_to_check = SRS
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+		}
+		create_wargoal = { type = annex_everything target = MNC }
+		create_wargoal = { type = annex_everything target = HAU }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_the_virgin_land
+	icon = GFX_goal_tfv_saf_support_ossebrandwag
+	x = 11
+	y = 16
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_push_into_the_north }
+	available = {
+		is_subject = no
+	}
+	bypass = {
+		OR = { 
+		    VED = { 
+		        exists = no 
+		    }
+		    VED = { 
+			    OR = {
+				    is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+					
+		        } 
+		    } 
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	will_lead_to_war_with = VED
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_virgin_land"
+		create_wargoal = { type = annex_everything target = VED }
+		hidden_effect = {
+			every_country_with_original_tag = {
+				original_tag_to_check = VED
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_string_up_kemerskai
+	icon = GFX_goal_Hang_The_Traitor
+	x = 13
+	y = 16
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_push_into_the_north }
+	available = {
+	    is_subject = no
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_FAT_tp
+		    557 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    556 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    548 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    480 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    474 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    582 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    485 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    432 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    450 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    583 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		    449 = {
+			    owner = {
+				    OR = { 
+				        tag = ROOT 
+				        OR = {
+						    is_subject_of = ROOT 
+						    is_in_faction_with = ROOT
+					    } 
+				    }
+			    }
+		    }
+		}
+	}
+	bypass = {
+		has_global_flag = keremeskai_dead
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_string_up_kemerskai"
+		country_event = { id = imperial.94 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_integrate_the_north
+	icon = GFX_goal_generic_position_armies
+	x = 12
+	y = 17
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_virgin_land }
+	prerequisite = { focus = GRI_CYOA_string_up_kemerskai }
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_north"
+		add_political_power = -150
+		FAT = { add_to_ROOT_potential_original_cores = yes }
+		FAW = { add_to_ROOT_potential_original_cores = yes }
+		SRS = { add_to_ROOT_potential_cores = yes }
+		MNC = { add_to_ROOT_potential_cores = yes }
+		VED = { add_to_ROOT_potential_cores = yes }
+		HAU = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_push_into_the_center
+	icon = GFX_goal_generic_more_territorial_claims
+	x = 16
+	y = 15
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_reich_rises }
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 11
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_AVI_BAN_EYR_ERI_LAK_BOI_tp
+		    AVI = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			BAN = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			EYR = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			ERI = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LAK = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			BOI = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+		389 = {
+			owner = {
+				OR = { 
+					tag = ROOT 
+					OR = { 
+						is_subject_of = ROOT  
+						is_in_faction_with = ROOT 
+					} 
+				}
+			}
+	    }
+	}
+	will_lead_to_war_with = AVI
+	will_lead_to_war_with = BAN
+	will_lead_to_war_with = EYR
+	will_lead_to_war_with = ERI
+	will_lead_to_war_with = BOI
+	will_lead_to_war_with = LAK
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_push_into_the_center"
+		create_wargoal = { type = annex_everything target = AVI }
+		create_wargoal = { type = annex_everything target = BAN }
+		create_wargoal = { type = annex_everything target = EYR }
+		create_wargoal = { type = annex_everything target = ERI }
+		if = {
+			limit = { country_exists = BOI }
+			create_wargoal = { type = annex_everything target = BOI }
+		}
+		else_if = {
+			limit = {
+				389 = {
+					owner = {
+						NOT = {
+							tag = ROOT
+							tag = BOI
+						}
+					}
+				}
+			}
+			389 = {
+				owner = {
+					ROOT = { create_wargoal = { type = annex_everything target = PREV } }
+				}
+			}
+		}
+		create_wargoal = { type = annex_everything target = LAK }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_respect_the_locals
+	icon = GFX_goal_POR_royal_edicts
+	x = 15
+	y = 16
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_push_into_the_center }
+	available = {
+	    is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_respect_the_locals"
+		add_ideas = GRI_local_auxiliaries
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESISTANCE FOCUS_FILTER_ARMY_BONUS }
+}
+
+shared_focus = {
+	id = GRI_CYOA_rebuild_griffinstone
+	icon = GFX_focus_strike_griffonstone
+	x = 17
+	y = 16
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_push_into_the_center }
+	available = {
+	    is_subject = no
+		389 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_rebuild_griffinstone"
+		389 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			country_event = { id = imperial.95 days = 1 }
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_integrate_the_center
+	icon = GFX_goal_generic_dangerous_deal
+	x = 16
+	y = 17
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_respect_the_locals }
+	prerequisite = { focus = GRI_CYOA_rebuild_griffinstone }
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_center"
+		add_political_power = -150
+		AVI = { add_to_ROOT_potential_cores = yes }
+		BAN = { add_to_ROOT_potential_cores = yes }
+		EYR = { add_to_ROOT_potential_cores = yes }
+		ERI = { add_to_ROOT_potential_cores = yes }
+		LAK = { add_to_ROOT_potential_cores = yes }
+		BOI = { add_to_ROOT_potential_original_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_push_into_the_west
+	icon = GFX_focus_generic_strike_at_democracy1
+	x = 20
+	y = 15
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_reich_rises }
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 11
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_TRD_FEZ_AET_HEL_POM_FLO_JRR_JER_JEB_JFT_VIN_tp
+		    TRD = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FEZ = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			AET = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			HEL = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			POM = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			JRR = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			JER = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			JEB = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			JFT = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			VIN = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FLO = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+	}
+	
+	will_lead_to_war_with = TRD
+	will_lead_to_war_with = FEZ
+	will_lead_to_war_with = AET
+	will_lead_to_war_with = HEL
+	will_lead_to_war_with = JEB
+	will_lead_to_war_with = JRR
+	will_lead_to_war_with = JER
+	will_lead_to_war_with = JFT
+	will_lead_to_war_with = VIN
+	will_lead_to_war_with = POM
+	will_lead_to_war_with = FLO
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_push_into_the_west"
+		create_wargoal = { type = annex_everything target = FLO }
+		create_wargoal = { type = annex_everything target = POM }
+		create_wargoal = { type = annex_everything target = TRD }
+		create_wargoal = { type = annex_everything target = FEZ }
+		create_wargoal = { type = annex_everything target = AET }
+		create_wargoal = { type = annex_everything target = HEL }
+		create_wargoal = { type = annex_everything target = JEB }
+		create_wargoal = { type = annex_everything target = JRR }
+		create_wargoal = { type = annex_everything target = JER }
+		create_wargoal = { type = annex_everything target = JFT }
+		create_wargoal = { type = annex_everything target = VIN }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_the_trade_cities
+	icon = GFX_goal_silver_reserve
+	x = 19
+	y = 16
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_push_into_the_west }
+	available = {
+	    is_subject = no
+		381 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		380 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		390 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_trade_cities"
+		381 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		380 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		390 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_the_oil_fields
+	icon = GFX_goal_further_oil
+	x = 21
+	y = 16
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_push_into_the_west }
+	available = {
+	    is_subject = no
+		494 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		493 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_oil_fields"
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 494
+		}
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 493
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_integrate_the_west
+	icon = GFX_goal_COS_Peace
+	x = 20
+	y = 17
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_trade_cities }
+	prerequisite = { focus = GRI_CYOA_the_oil_fields }
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_west"
+		add_political_power = -150
+		TRD = { add_to_ROOT_potential_cores = yes }
+		FEZ = { add_to_ROOT_potential_cores = yes }
+		AET = { add_to_ROOT_potential_cores = yes }
+		HEL = { add_to_ROOT_potential_cores = yes }
+		JRR = { add_to_ROOT_potential_cores = yes }
+		JER = { add_to_ROOT_potential_cores = yes }
+		JES = { add_to_ROOT_potential_cores = yes }
+		JEB = { add_to_ROOT_potential_cores = yes }
+		JFT = { add_to_ROOT_potential_cores = yes }
+		VIN = { add_to_ROOT_potential_cores = yes }
+		POM = { add_to_ROOT_potential_cores = yes }
+		FLO = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_the_southern_war
+	icon = GFX_focus_wingbardy_forever
+	x = 14
+	y = 18
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_integrate_the_center }
+	prerequisite = { focus = GRI_CYOA_integrate_the_north }
+	prerequisite = { focus = GRI_CYOA_integrate_the_west }
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 11
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_ARA_FRN_TAL_WNG_FAL_SIC_CYA_tp
+		    ARA = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FRN = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			TAL = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			WNG = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			FAL = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			SIC = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			CYA = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+	}
+	
+	will_lead_to_war_with = ARA
+	will_lead_to_war_with = FRN
+	will_lead_to_war_with = TAL
+	will_lead_to_war_with = WNG
+	will_lead_to_war_with = FAL
+	will_lead_to_war_with = SIC
+	will_lead_to_war_with = CYA
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_southern_war"
+		create_wargoal = { type = annex_everything target = ARA }
+		create_wargoal = { type = annex_everything target = FRN }
+		create_wargoal = { type = annex_everything target = TAL }
+		create_wargoal = { type = annex_everything target = WNG }
+		create_wargoal = { type = annex_everything target = FAL }
+		create_wargoal = { type = annex_everything target = SIC }
+		create_wargoal = { type = annex_everything target = CYA }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_arantigos_reborn
+	icon = GFX_focus_HOL_deal_with_right
+	x = 13
+	y = 19
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_southern_war }
+	available = {
+	    is_subject = no
+		408 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_arantigos_reborn"
+		add_country_leader_trait = arantigos_reborn
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_falcorian_legion
+	icon = GFX_goal_military_academy
+	x = 15
+	y = 19
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_southern_war }
+	available = {
+	    is_subject = no
+	}
+	bypass = {
+		OR = { 
+		    MIT = { 
+		        exists = no 
+		    }
+		    MIT = { 
+			    OR = {
+				    is_subject_of = ROOT 
+					is_in_faction_with = ROOT
+					
+		        } 
+		    } 
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	will_lead_to_war_with = MIT
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_falcorian_legion"
+		create_wargoal = { type = puppet_wargoal_focus target = MIT }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_integrate_the_south
+	icon = GFX_goal_wng_glory_to_wingbardy
+	x = 14
+	y = 20
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_arantigos_reborn }
+	prerequisite = { focus = GRI_CYOA_falcorian_legion }
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_south"
+		add_political_power = -150
+		ARA = { add_to_ROOT_potential_cores = yes }
+		FRN = { add_to_ROOT_potential_cores = yes }
+		TAL = { add_to_ROOT_potential_cores = yes }
+		WNG = { add_to_ROOT_potential_cores = yes }
+		FAL = { add_to_ROOT_potential_cores = yes }
+		SIC = { add_to_ROOT_potential_cores = yes }
+		CYA = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_the_new_frontier
+	icon = GFX_goal_generic_position_armies
+	x = 18
+	y = 18
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_integrate_the_center }
+	prerequisite = { focus = GRI_CYOA_integrate_the_north }
+	prerequisite = { focus = GRI_CYOA_integrate_the_west }
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 11
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	
+	bypass = { 
+	    custom_trigger_tooltip = {
+			tooltip = GRI_core_HLQ_LNS_LSM_LSC_LUS_GRW_BRF_GRY_GRU_tp
+		    HLQ = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LNS = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LSM = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LSC = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			LUS = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			GRW = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			BRF = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			GRY = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+			GRU = {
+			    OR = {
+				    exists = no
+				    is_subject_of = ROOT
+			    }
+		    }
+		}
+	}
+	
+	will_lead_to_war_with = HLQ
+	will_lead_to_war_with = LNS
+	will_lead_to_war_with = LSC
+	will_lead_to_war_with = LSM
+	will_lead_to_war_with = GRW
+	will_lead_to_war_with = BRF
+	will_lead_to_war_with = GRU
+	will_lead_to_war_with = GRY
+	will_lead_to_war_with = LUS
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_new_frontier"
+		create_wargoal = { type = annex_everything target = HLQ }
+		create_wargoal = { type = annex_everything target = LNS }
+		create_wargoal = { type = annex_everything target = LSC }
+		create_wargoal = { type = annex_everything target = LSM }
+		create_wargoal = { type = annex_everything target = GRW }
+		create_wargoal = { type = annex_everything target = BRF }
+		create_wargoal = { type = annex_everything target = GRU }
+		create_wargoal = { type = annex_everything target = GRY }
+		create_wargoal = { type = annex_everything target = LUS }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_crush_the_commies
+	icon = GFX_SIA_maritmesilkroad
+	x = 17
+	y = 19
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_new_frontier }
+	available = {
+	    is_subject = no
+		594 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_crush_the_commies"
+		594 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+shared_focus = {
+	id = GRI_CYOA_respect_the_cossacks
+	icon = GFX_goal_offensive_army
+	x = 19
+	y = 19
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_the_new_frontier }
+	available = {
+	    is_subject = no
+		GRY = { exists = no }
+		GRU = { exists = no }
+		598 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+	bypass = {
+		GRY = { OR = { is_subject_of = ROOT  is_in_faction_with = ROOT } }
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_respect_the_cossacks"
+		custom_effect_tooltip = GRI_cossack_land_tp
+		hidden_effect = {
+			country_event = { id = imperial.97 days = 1 }
+		}
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_integrate_the_frontier
+	icon = GFX_goal_skull_treaty
+	x = 18
+	y = 20
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_crush_the_commies }
+	prerequisite = { focus = GRI_CYOA_respect_the_cossacks }
+	available = { 
+	    is_subject = no
+		has_political_power > 50
+	}
+	cancel_if_invalid = no
+
+	ai_will_do = {
+		factor = 50
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_integrate_the_frontier"
+		add_political_power = -150
+		HLQ = { add_to_ROOT_potential_original_cores = yes }
+		LNS = { add_to_ROOT_potential_cores = yes }
+		hidden_effect = {
+			LSM = { add_to_ROOT_potential_cores = yes }
+			LSC = { add_to_ROOT_potential_cores = yes }
+		}
+		LUS = { add_to_ROOT_potential_cores = yes }
+		GRW = { add_to_ROOT_potential_cores = yes }
+		BRF = { add_to_ROOT_potential_cores = yes }
+		GRU = { add_to_ROOT_potential_cores = yes }
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_operation_grover_ii
+	icon = GFX_goal_ideology_national_populist
+	x = 16
+	y = 21
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_integrate_the_south }
+	prerequisite = { focus = GRI_CYOA_integrate_the_frontier }
+	available = {
+		is_subject = no
+	}
+
+	ai_will_do = {
+		factor = 11
+		modifier = {
+			has_war = yes
+			factor = 0
+		}
+	}
+	
+	bypass = {
+		FIR = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		WAT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		FBK = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		DMT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		BAK = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		DEP = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		LCT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		RCT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		WIT = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		NIM = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		FRE = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		BAR = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		ZES = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+		OLV = {
+			OR = {
+				exists = no
+				is_subject_of = ROOT
+				has_war_with = ROOT
+			}
+		}
+	}
+	
+	will_lead_to_war_with = FIR
+	will_lead_to_war_with = WAT
+	will_lead_to_war_with = FBK
+	will_lead_to_war_with = DMT
+	will_lead_to_war_with = BAK
+	will_lead_to_war_with = DEP
+	will_lead_to_war_with = LCT
+	will_lead_to_war_with = RCT
+	will_lead_to_war_with = WIT
+	will_lead_to_war_with = NIM
+	will_lead_to_war_with = FRE
+	will_lead_to_war_with = BAR
+	will_lead_to_war_with = ZES
+	will_lead_to_war_with = OLV
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_operation_grover_ii"
+		create_wargoal = { type = annex_everything target = FIR }
+		create_wargoal = { type = annex_everything target = WAT }
+		create_wargoal = { type = annex_everything target = FBK }
+		create_wargoal = { type = annex_everything target = DMT }
+		create_wargoal = { type = annex_everything target = BAK }
+		create_wargoal = { type = annex_everything target = DEP }
+		create_wargoal = { type = annex_everything target = LCT }
+		create_wargoal = { type = annex_everything target = RCT }
+		create_wargoal = { type = annex_everything target = WIT }
+		create_wargoal = { type = annex_everything target = NIM }
+		create_wargoal = { type = annex_everything target = FRE }
+		create_wargoal = { type = annex_everything target = BAR }
+		create_wargoal = { type = annex_everything target = ZES }
+		create_wargoal = { type = annex_everything target = OLV }
+	}
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+}
+
+shared_focus = {
+	id = GRI_CYOA_crush_the_partisans
+	icon = GFX_goal_step_on_skull
+	x = 15
+	y = 22
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_operation_grover_ii }
+	available = {
+		LCT = { exists = no }
+		387 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_crush_the_partisans"
+		country_event = { id = imperial.96 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = GRI_CYOA_land_for_the_veterans
+	icon = GFX_goal_agrarian_reform
+	x = 17
+	y = 22
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_operation_grover_ii }
+	available = {
+		LCT = { exists = no }
+		541 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		560 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		499 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		551 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		550 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		491 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		543 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		387 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_land_for_the_veterans"
+		add_political_power = 75
+		add_stability = 0.05
+		541 = {
+			add_manpower = 5000
+		}
+		560 = {
+			add_manpower = 5000
+		}
+		499 = {
+			add_manpower = 5000
+		}
+		551 = {
+			add_manpower = 5000
+		}
+		550 = {
+			add_manpower = 5000
+		}
+		491 = {
+			add_manpower = 5000
+		}
+		543 = {
+			add_manpower = 5000
+		}
+		387 = {
+			add_manpower = 5000
+		}
+	}
+	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+}
+
+shared_focus = {
+	id = GRI_CYOA_reichkomissariats
+	icon = GFX_goal_constitutional_guarantees
+	x = 16
+	y = 23
+	cost = 7.20
+	prerequisite = { focus = GRI_CYOA_crush_the_partisans }
+	prerequisite = { focus = GRI_CYOA_land_for_the_veterans }
+	available = {
+		FIR = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+		WAT = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		FBK = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		DMT = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		BAK = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		DEP = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		LCT = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		RCT = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		WIT = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		NIM = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		FRE = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		BAR = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		ZES = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		OLV = { 
+			OR = {
+				exists = no 
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			} 
+		}
+		custom_trigger_tooltip = {
+	    tooltip = GRI_capitals_tp
+		455 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		642 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		454 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		387 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		544 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		637 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		649 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		619 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		645 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		617 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		580 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		626 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		413 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			}
+		}
+		412 = {
+			owner = {
+				OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT }
+			    }
+		    }
+		}
+	}
+
+	ai_will_do = {
+		factor = 11
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRI_reichkomissariats"
+		custom_effect_tooltip = GRI_reichkomissariats_tp
+		hidden_effect = {
+			country_event = { id = imperial.98 }
+		}
+	}
+}
+###MOD_ADD2###
