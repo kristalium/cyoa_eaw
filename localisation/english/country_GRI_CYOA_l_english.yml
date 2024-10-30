@@ -1,4 +1,199 @@
 ﻿l_english:
+ ############
+ ###Focus Tree###
+ ############
+ GRI_CYOA_the_grand_coup:0 "The Grand Coup"
+ GRI_CYOA_the_grand_coup_desc:0 "Ferdinand Dawnclaw and the Regierung der Nationalen Rettung have seized power from the old order, and now the time has come to address the serious problems that plague the Empire."
+ 
+ GRI_CYOA_oh_god:0 "Dear Boreas"
+ GRI_CYOA_oh_god_desc:0 "After doing a thorough review of the strategic situation, our logistics, and a tactical appraisal of our forces, our foremost tacticians have concluded that our chances of survival are rather... slim."
+ 
+ GRI_CYOA_everything_is_on_fire:0 "Everything Is On Fire"
+ GRI_CYOA_everything_is_on_fire_desc:0 "The reaction to Ferdinand's coup has been slightly more... enthusiastic than expected. That is to say, there is a crowd outside our headquarters and they seem very eager to get their claws on Ferdinand, or more specifically around his neck."
+
+ GRI_CYOA_calm_the_fuck_down:0 "Please Send Help"
+ GRI_CYOA_calm_the_fuck_down_desc:0 "Ferdinand has sent out a call for assistance to the few units loyal to him outside the city. The message itself calls on them to make their way to Griffenheim very fast, and to make ready for combat once they arrive. Hopefully, they will arrive soon. If they do not arrive, well then we might as well shoot ourselves now to save the firing line some bullets."
+ 
+ GRI_CYOA_secure_the_streets:0 "Panzers On The Streets"
+ GRI_CYOA_secure_the_streets_desc:0 "With our reinforcements finally having arrived and Griffenheim firmly in our claws the time has come to enforce order on the streets. Order, in this case, will come in the form of a 20-tonne steel beast of death and destruction, let's see them try to bring that down with rocks and rifles."
+ 
+ GRI_CYOA_hang_them_high:0 "Corpses On The Lamp Posts"
+ GRI_CYOA_hang_them_high_desc:0 "It seems that the citizens of Griffenheim have not fully learned their lesson. When gentler methods fail, harsher ones are called for. And the methods we can use are very harsh indeed."
+ 
+ GRI_CYOA_a_bullet_for_the_priests:0 "Send Them To Their Gods"
+ GRI_CYOA_a_bullet_for_the_priests_desc:0 "The knights of the Empire have apparently not gotten it through their skulls that we are in charge. They simply refuse to shut up about the late emperor and our crimes against the gods. Well if they care so much about the gods we might as well give them a chance to meet them in person."
+ 
+ GRI_CYOA_a_message:0 "With A Message"
+ GRI_CYOA_a_message_desc:0 "A certain griffon has been a thorn in our side ever since the coup. He does possess a large amount of influence within the Empire, and moving against him will certainly be difficult. But if he cannot accept the new status quo, then he must go."
+
+ GRI_CYOA_traitors_within:0 "A Bullet For The Soldiers"
+ GRI_CYOA_traitors_within_desc:0 "The military has been pretty firmly split between those who support Ferdinand and those who are against him. Now, if we consider this from a legal perspective, if they refuse to accept the authority of the new leader then they refuse to accept the authority of the Empire itself. That is quite clearly treason, and the punishment for treason is quite clear as well."
+
+ GRI_CYOA_what_they_deserve:0 "And A Noose For The Commanders"
+ GRI_CYOA_what_they_deserve_desc:0 "Now that the common soldiers have been dealt with, the time has come for us to deal with the officers. The rebellious commanders have all quite harshly protested our previous actions, and demand proper treatment as prisoners. And what could be a more proper method of death for a traitor than the noose?"
+
+ GRI_CYOA_shoot_the_nobles:0 "Through The Windows"
+ GRI_CYOA_shoot_the_nobles_desc:0 "The nobles simply can't seem to shut up. They have issued countless protests and demands for their old rights, and despite our best efforts they can't seem to take a hint. The nobles have ruled from their ivory towers for so long, the time has come for them to get a more down to earth perspective, no?"
+
+ GRI_CYOA_kill_eros:0 "'Retire' Eros"
+ GRI_CYOA_kill_eros_desc:0 "Right, so the last attempt we made at the life of Eros was... less than successful. But the fact remains that we cannot tolerate his presence anymore. And when subtler methods fail, direct ones might succeed."
+
+ GRI_CYOA_the_anarchy_ends:0 "Lord Protectors Regency" ###TODO
+ GRI_CYOA_the_anarchy_ends_desc:0 "Lord Protector Ferdinand and the Regierung der Nationalen Rettung have managed to destroy the treacherous elements of the Empire. With the anarchy that consumed the nation finally over, the time has come to commence the grander plans that the Lord Protector has in mind."
+ 
+ GRI_CYOA_propaganda_and_or_education:0 "Educate The People"
+ GRI_CYOA_propaganda_and_or_education_desc:0 "The Empire cannot hope to reclaim its former glory if its population, and more importantly its army, cannot read. The people will be educated in the correct manner, with an emphasis on how our glorious Lord Protector will save us from oblivion."
+
+ GRI_CYOA_a_portrait_in_every_home:0 "Erase The Monarchy" ###TODO
+ GRI_CYOA_a_portrait_in_every_home_desc:0 "Lord Protector Ferdinand has truly saved the Empire from destruction, and it is only fitting for such a monolithic figure to be adored by the populace. A portrait of him can now be found in every home, regardless of what the homeowners might privately think about him."
+
+ GRI_CYOA_ministry_of_propaganda:0 "Reichsministerium Für Propaganda"
+ GRI_CYOA_ministry_of_propaganda_desc:0 "The press has never been an ally of the state, peddling vile rumors, and lies against the government at every turn. To ensure that the noble citizens of the Empire receive only the very best in journalism a state-sponsored ministry shall now oversee the journalists, to ensure fairness of course."
+ 
+ GRI_CYOA_kulturekampf:0 "Neuekultur"
+ GRI_CYOA_kulturekampf_desc:0 "A reborn empire needs a reborn culture, one that emphasizes the correct traits that every griffon should possess. Bravery, loyalty, and obedience shall be ingrained into the very fabric of society, lest the rot that infested the Empire return."
+ 
+ GRI_CYOA_the_war_economy:0 "The War Economy"
+ GRI_CYOA_the_war_economy_desc:0 "The economy only exists to serve the state, and the state only exists to battle its enemies through war. Thus, the economy must be tuned towards war. The factories will produce their goods to our exact specifications, and they will do so without complaint."
+ 
+ GRI_CYOA_convert_the_factories:0 "Convert The Factories"
+ GRI_CYOA_convert_the_factories_desc:0 "A large number of factories within the imperial city are dedicated to the production of pointless baubles and toys for the civilian population. If the Empire is to reclaim its glory such waste cannot be tolerated! These factories shall be converted to produce the weapons which we will use to reclaim the Empire."
+
+ GRI_CYOA_military_industrial_council:0 "Militärischer Industrierat"
+ GRI_CYOA_military_industrial_council_desc:0 "Several prominent industrialists have been far more agreeable to our demands than the others, and such dedication and loyalty to the state should be rewarded. These industrialists shall sit on a council dedicated to optimizing the production of weapons, and will receive appropriate rewards to compensate them for their time."
+
+ GRI_CYOA_we_need_more:0 "Everything For The Fatherland"
+ GRI_CYOA_we_need_more_desc:0 "The citizens of the Empire will have to sacrifice much for the state, longer hours with lower pay will have to be tolerated, and unemployment will be eradicated amongst the working population. They will work as long as we command them to, anything less would be treason. "
+ 
+ GRI_CYOA_reform_the_army:0 "Reform The Reichsarmee"
+ GRI_CYOA_reform_the_army_desc:0 "The Imperial Army has been plagued with cowards and traitors for too long. The Lord Protector will transform it into a truly noble force, one utterly dedicated to their mission, and one with absolute faith in the decisions of the leadership."
+ 
+ GRI_CYOA_new_officers:0 "New Officers"
+ GRI_CYOA_new_officers_desc:0 "Several promising officers that joined the Lord Protector in the coup have shown a good understanding of strategy, as well as complete loyalty to the state. With such aptitude and dedication, a promotion is no doubt in order."
+ 
+ GRI_CYOA_no_more_police:0 "Merge The Police And The Army"
+ GRI_CYOA_no_more_police_desc:0 "The police exist to ensure order on the streets and the loyalty of the populace. The military also exists to undertake these tasks. We should eliminate this institutional redundancy within the Empire by merging these two forces into one. "
+
+ GRI_CYOA_citizenship_for_service:0 "No Place For Cowards"
+ GRI_CYOA_citizenship_for_service_desc:0 "The Imperial Army is a place for the very best of the best, and as such is no place for cowards. Every single new recruit shall be transformed into a machine of war, completely obedient and willing to die for the Empire. To do anything less would simply be inefficient."
+
+ GRI_CYOA_into_the_south:0 "Operation: Herzschmerz"
+ GRI_CYOA_into_the_south_desc:0 "The former vassals of the Emperor boldly declared their independence and condemned the coup. They will soon regret their foolish loyalty to the old order! Our glorious Lord Protector shall lead our armies to utterly crush these rebels and once more reunite Herzland under one banner. We may be outnumbered, but the mighty Reichsarmee cannot be beaten with mere numbers!"
+
+ GRI_CYOA_core_the_universities:0 "Crush The Southerners"
+ GRI_CYOA_core_the_universities_desc:0 "The southerners have attempted in vain to establish their own national identities separate from the empire. We shall show them that these misguided and foolish attempts have done nothing to aid them and that they are all ultimately citizens of the Empire."
+ 
+ GRI_CYOA_core_the_shit_forest:0 "Burn The Scheißwald"
+ GRI_CYOA_core_the_shit_forest_desc:0 "Angriver and Katerin have been loyal constituents of the Empire for centuries, and despite whatever foolishness they might have convinced themselves to believe they still are. The Scheißwald will be reminded of its proper place, by force if necessary."
+ 
+ GRI_CYOA_greenback_aluminum:0 "The Spoils Of War"
+ GRI_CYOA_greenback_aluminum_desc:0 "The traitors of the south renounced any rights that they might have had the very second that they rebelled from the Empire. And as we have vanquished these traitors, it is only right that their property is put to proper use. "
+ 
+ GRI_CYOA_angriver_factories:0 "Burn The Forests"
+ GRI_CYOA_angriver_factories_desc:0 "The vast forests of the south have prevented the construction and development of the region for too long. This has to change, so we need to get rid of the forest quickly and efficiently. An elegant solution has been proposed: We simply burn it down."
+ 
+ GRI_CYOA_reuse_a_uni:0 "A Place Of Higher Learning"
+ GRI_CYOA_reuse_a_uni_desc:0 "With the recent occupation of several research institutes and universities, the possibility of expanding our research and development efforts has finally become viable."
+ 
+ GRI_CYOA_military_school:0 "Use The Feathisian Cadet Schools"
+ GRI_CYOA_military_school_desc:0 "The Feathisian military academies have proved themselves time and again to be a reliable source for good officers. By expanding these prodigious institutions and employing them in an official capacity we can secure a reliable area to base our military development from."
+ 
+ GRI_CYOA_use_it_for_propaganda:0 "Use The University Of Romau"
+ GRI_CYOA_use_it_for_propaganda_desc:0 "Romau has been the center of higher learning in the Empire for generations and is generally regarded as a safe choice to base our research and development efforts out of. While Romau might not be the place for breakneck advancements, it will give us a certain amount of political legitimacy."
+ 
+ GRI_CYOA_secret_projects:0 "Wunderwaffen"
+ GRI_CYOA_secret_projects_desc:0 "With the more traditional areas of research now dealt with, the time has come to address some of the more... unorthodox ideas that our scientists have had. While a lot of them seem, to put it bluntly insane, surely there is something useful that we can glean from them. "
+ 
+ GRI_CYOA_core_feathisia:0 "Integrate The Swamp Griffons"
+ GRI_CYOA_core_feathisia_desc:0 "The denizens of Feathisia and Greifenmarschen are all true subjects of the Empire, and the time has come to remind them of that. They will all learn the error of their ways and become model citizens of the Empire."
+ 
+ GRI_CYOA_core_the_dogs:0 "Rein In The Dogs"
+ GRI_CYOA_core_the_dogs_desc:0 "The griffons of Strawberry and the dogs of Bronzehill have proven themselves to be convinced of some wild delusion that they are not the rightful subjects of the empire. And sometimes the owner of a dog must remind it of who its master really is."
+
+ GRI_CYOA_ban_the_feathisian_language:0 "Seize The Feathisian Oil Fields"
+ GRI_CYOA_ban_the_feathisian_language_desc:0 "The oil fields of Feathisia could be put to much better use by the state, and as the victors, it is only right that we take what is ours. The denizens of Feathisia will deliver the oil fields to us, willingly or otherwise."
+
+ GRI_CYOA_expell_the_dogs:0 "Expel The Dogs"
+ GRI_CYOA_expell_the_dogs_desc:0 "The dogs simply cannot stop talking about the late emperor, and this has grown into a problem too large to ignore. They can whine about his death all they want outside of the Empire, as they have proven that they cannot be trusted to serve as loyal citizens."
+
+ GRI_CYOA_the_reich_rises:0 "Emperial Reich" ###TODO
+ GRI_CYOA_the_reich_rises_desc:0 "Under the excellent leadership of our beloved Lord Protector Ferdinand, the Empire has reclaimed its heartland. But this is not the end of our ambitions, soon the entire world shall be reminded of the Empire's might once and for all."
+
+ GRI_CYOA_push_into_the_north:0 "Into The Land Of Traitors"
+ GRI_CYOA_push_into_the_north_desc:0 "To the north lie the vile traitors of the Griffonian Republic. These despicable bandits were the original reason for the decline of the empire, and ever since their pathetic revolution have been hiding out in the mountains. The time has come for them to face the ultimate justice."
+
+ GRI_CYOA_the_virgin_land:0 "The Virgin Lands Of Vedina"
+ GRI_CYOA_the_virgin_land_desc:0 "Vedina, while never having been directly part of the Empire, is a land that has been untouched by war for a long time. The Empire was built on the corpses of lesser nations, and the time has come for Vedina to join the Griffonian Empire in a permanent fashion."
+ 
+ GRI_CYOA_string_up_kemerskai:0 "A Noose For The President-Marshal"
+ GRI_CYOA_string_up_kemerskai_desc:0 "President-Marshal Kemerskai is the original source of the weakness that has consumed the Empire for so long. The time has come for the criminal to face punishment for his actions, and there is only one sentence appropriate for the scale of his crimes."
+ 
+ GRI_CYOA_integrate_the_north:0 "A Cleansed Land"
+ GRI_CYOA_integrate_the_north_desc:0 "The north has finally been cleansed of the vile criminals that inhabited it, and now only loyal citizens of the Empire remain. It is only a matter of time before the region has been fully integrated into the Reich."
+ 
+ GRI_CYOA_push_into_the_center:0 "The Home Of Griffonkind"
+ GRI_CYOA_push_into_the_center_desc:0 "To the south lies the ultimate birthplace of the griffon race. Griffonstone is the source from which the progenitors of our species sprang forth. If the Empire is to be restored, we must secure this important region."
+
+ GRI_CYOA_respect_the_locals:0 "Nothing But Respect"
+ GRI_CYOA_respect_the_locals_desc:0 "The Reich will show nothing but respect to the denizens of the south, and as such we will form local auxiliaries to supplement our units. This course of action will surely aid us with the wider process of integrating the south."
+ 
+ GRI_CYOA_rebuild_griffinstone:0 "Rebuild Griffonstone"
+ GRI_CYOA_rebuild_griffinstone_desc:0 "Griffonstone is the original home of the griffons, and despite this, it has remained in a sorry state for decades. This state of affairs cannot be allowed to continue, and as such we will restore Griffonstone to its proper glory."
+
+ GRI_CYOA_integrate_the_center:0 "A Shining Beacon"
+ GRI_CYOA_integrate_the_center_desc:0 "The southern provinces have become a shining beacon of prosperity and peace, with their inhabitants having fully accepted their imperial identities. We shall show the whole world the heights that we can uplift even the dregs of society too. "
+
+ GRI_CYOA_push_into_the_west:0 "Towards The West"
+ GRI_CYOA_push_into_the_west_desc:0 "To the west lie many vitally important regions, such as Aquileia and Skyfall. These have long been proper part of the Empire, and as such, they will be reincorporated into the Empire by any means possible."
+
+ GRI_CYOA_the_trade_cities:0 "The Trade Cities"
+ GRI_CYOA_the_trade_cities_desc:0 "Skyfall, Griffton, and Fezera are some of the most prosperous trade cities on the continent. Expanding and supporting these centers of trade should be one of our first priorities, now that we've secured them."
+
+ GRI_CYOA_the_oil_fields:0 "The Greifwaldian Oil Fields"
+ GRI_CYOA_the_oil_fields_desc:0 "The oil fields of Greifwald have yet to be tapped to their full potential, and the machines of war consume oil at a truly frightening pace. Expanding these wells will bolster our economy, and aid in making us less reliant on foreign sources for our oil."
+ 
+ GRI_CYOA_integrate_the_west:0 "The West Is Ours"
+ GRI_CYOA_integrate_the_west_desc:0 "The fires of resistance within the west have finally been extinguished, and it is now ready for final reintegration into the Empire. The boons of securing this region are already making themselves clear, and will only grow once reintegration is complete."
+
+ GRI_CYOA_the_southern_war:0 "The Southern War"
+ GRI_CYOA_the_southern_war_desc:0 "Far to the south lies the false kingdom of Wingbardy, the first of the traitors to break away from the Empire. The time has come to reclaim this rebellious kingdom and the entire region surrounding it."
+ 
+ GRI_CYOA_arantigos_reborn:0 "Arantigos Reborn"
+ GRI_CYOA_arantigos_reborn_desc:0 "The citizens of Arantiga have started to act strangely these past few weeks. It seems that they have convinced themselves that the Lord Protector is Arantigos reborn. While normally such foolishness would be stamped out, the Lord Protector has, after giving serious thought to the idea, decided to embrace it as fact. Is there anyone which can deny that his conquests do not surpass those of Arantigos?"
+ 
+ GRI_CYOA_falcorian_legion:0 "The Conquest Of Asterion"
+ GRI_CYOA_falcorian_legion_desc:0 "The minotaurs of Asterion have never truly accepted the authority of the Empire, and have continued to resist our rightful rule for generations. The time has come to remind them that the Empire is the dominant force on Griffonia, and that they would be wise to accept this simple fact."
+ 
+ GRI_CYOA_integrate_the_south:0 "Wingbardy Delenda Est"
+ GRI_CYOA_integrate_the_south_desc:0 "Wingbardy was and is nothing more than an artificial construct created by the Empire. And as punishment for their treachery, Wingbardian identity shall be utterly destroyed. There will no longer be any Wingbardians, only citizens of the Empire."
+
+ GRI_CYOA_the_new_frontier:0 "Reclaim The Frontier"
+ GRI_CYOA_the_new_frontier_desc:0 "The old frontier represented the farthest reaches of the Empire, and the time has come to reclaim it. The principalities, knightly orders as well as the territories of the Gryphian Host all rightfully belong to the Empire after all. "
+
+ GRI_CYOA_crush_the_commies:0 "Griffonia's Far Eastern Port"
+ GRI_CYOA_crush_the_commies_desc:0 "Riaportu is the most economically valuable port within southern Griffonia, and developing it further would most certainly help with developing our naval forces."
+
+ GRI_CYOA_respect_the_cossacks:0 "Kosakenland"
+ GRI_CYOA_respect_the_cossacks_desc:0 "The Cossacks of the Gryphian Host have proven to be strangely accepting of our authority, and such obedience is to be rewarded. We can allow them some autonomy in exchange for their service in our armies."
+ 
+ GRI_CYOA_integrate_the_frontier:0 "Integrate The Frontier"
+ GRI_CYOA_integrate_the_frontier_desc:0 "The frontier, after many months of hard work, is finally ready for its final integration into the wider Empire. When this is finished we will finally have fully reclaimed the borders of the old Empire."
+
+ GRI_CYOA_operation_grover_ii:0 "Grovers Campaign" ###TODO
+ GRI_CYOA_operation_grover_ii_desc:0 "The old Empire was stopped from further expansion at the borders of the frontier, with even the greatest conquerors being unable to subjugate the Riverlands and the surrounding area. If we can accomplish this herculean task, we will finally have fully surpassed the old Empire."
+ 
+ GRI_CYOA_crush_the_partisans:0 "Woe To The Vanquished"
+ GRI_CYOA_crush_the_partisans_desc:0 "With the recent capture of Prince Heavenly Snow, an opportunity to break the spirit of Lake City has presented itself. The Prince will be punished harshly for defying the Empire, and the ponies will be reminded of our strength."
+ 
+ GRI_CYOA_land_for_the_veterans:0 "Land For The Veterans"
+ GRI_CYOA_land_for_the_veterans_desc:0 "With the Riverlands finally subjugated, we have found ourselves with a large amount of land that needs to be distributed. And what reward could be more fitting for our soldiers than the rights to the very land that they conquered. "
+
+ GRI_CYOA_reichkomissariats:0 "Establish The Reichskommissariats"
+ GRI_CYOA_reichkomissariats_desc:0 "Managing the Riverlands is an extremely taxing endeavour, and it is proving to be more of a headache than it is worth. By allowing some measure of autonomy, we can at the very least throw this problem over at some other griffon."
+ 
+ ############
+ ###Events###
+ ############
  imperial_cyoa_news.6.t:0 "Military Coup In The Empire!" 
  imperial_cyoa_news.6.d:0 "[This.GetNewspaperHeader]All of Griffonia held its breath, watching the events unfolding in Griffenheim. The Imperial Army seized control of the government and stormed the palace, ruthlessly crushing all resistance in its path. \n\nThe fate of the young emperor remains uncertain. Ferdinand Dawnclaw, the leader of the coup, claims that the heir to the throne is safe. However, many believe that something horrible may have happened during the palace assault. And even if Grover survived, it's unlikely that the Empire will remain the same."
  imperial_cyoa_news.6.a:0 "Long live the Lord Protector, long live the Emperor!" 
