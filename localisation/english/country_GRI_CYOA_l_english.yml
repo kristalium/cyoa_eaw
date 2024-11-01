@@ -44,8 +44,8 @@
  GRI_CYOA_propaganda_and_or_education:0 "Educate The People"
  GRI_CYOA_propaganda_and_or_education_desc:0 "The Empire cannot hope to reclaim its former glory if its population, and more importantly its army, cannot read. The people will be educated in the correct manner, with an emphasis on how our glorious Lord Protector will save us from oblivion."
 
- GRI_CYOA_a_portrait_in_every_home:0 "Erase The Monarchy" ###TODO
- GRI_CYOA_a_portrait_in_every_home_desc:0 "Lord Protector Ferdinand has truly saved the Empire from destruction, and it is only fitting for such a monolithic figure to be adored by the populace. A portrait of him can now be found in every home, regardless of what the homeowners might privately think about him."
+ GRI_CYOA_a_portrait_in_every_home:0 "Reform The Monarchy" ###TODO
+ GRI_CYOA_a_portrait_in_every_home_desc:0 "Lord Protector Ferdinand has truly saved the Empire from destruction, and it is only fitting for such a monolithic figure to be adored by the populace. However, many still remain loyal only to the emperor, ignoring Ferdinand's authority. The order of succession to the throne must be abolished, so that weak emperors will never lead the country again."
 
  GRI_CYOA_ministry_of_propaganda:0 "Reichsministerium Für Propaganda"
  GRI_CYOA_ministry_of_propaganda_desc:0 "The press has never been an ally of the state, peddling vile rumors, and lies against the government at every turn. To ensure that the noble citizens of the Empire receive only the very best in journalism a state-sponsored ministry shall now oversee the journalists, to ensure fairness of course."
@@ -180,7 +180,7 @@
  GRI_CYOA_integrate_the_frontier_desc:0 "The frontier, after many months of hard work, is finally ready for its final integration into the wider Empire. When this is finished we will finally have fully reclaimed the borders of the old Empire."
 
  GRI_CYOA_operation_grover_ii:0 "Grovers Campaign" ###TODO
- GRI_CYOA_operation_grover_ii_desc:0 "The old Empire was stopped from further expansion at the borders of the frontier, with even the greatest conquerors being unable to subjugate the Riverlands and the surrounding area. If we can accomplish this herculean task, we will finally have fully surpassed the old Empire."
+ GRI_CYOA_operation_grover_ii_desc:0 "The old Empire was stopped from further expansion at the borders of the frontier, with even the greatest conquerors being unable to subjugate the Riverlands and the surrounding area. The time has come for the heir to prove that those who have Grover blood in them are worthy of being rulers, or that they should go down in history in disgrace."
  
  GRI_CYOA_crush_the_partisans:0 "Woe To The Vanquished"
  GRI_CYOA_crush_the_partisans_desc:0 "With the recent capture of Prince Heavenly Snow, an opportunity to break the spirit of Lake City has presented itself. The Prince will be punished harshly for defying the Empire, and the ponies will be reminded of our strength."
